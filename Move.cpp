@@ -12,3 +12,7 @@ Move::Move(){
 Move::Move(std::string moveName){
     name = moveName;
 }
+
+void Move::setName(std::string newName){
+    name = newName;
+}

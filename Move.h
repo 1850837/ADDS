@@ -2,11 +2,13 @@
 #define MOVE_H
 
 #include <string>
+#include <vector>
 
 class Move {
 
-    private:
+    protected:
     std::string name;
+    std::vector<std::string> strongerAgainst;   //array to hold strings of what is stronger against
 
     public:
     std::string getName();
@@ -18,6 +20,9 @@ class Move {
     Move(std::string moveName); //constructor where name is given
 
     void setName(std::string newName);  //function to set a new move
+    //DON'T THINK WE NEED THIS?
+
+    //DOES MOVE NEED TO BE ABSTRACT??
 };
 
 #endif
