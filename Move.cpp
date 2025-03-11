@@ -8,3 +8,7 @@ std::string Move::getName(){
 Move::Move(){
     name = "Paper";
 }
+
+std::string* Move::getVector(){
+    return &strongerAgainst[0];
+}

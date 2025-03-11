@@ -11,11 +11,9 @@ class Move {
     std::vector<std::string> strongerAgainst;   //array to hold strings of what is stronger against
 
     public:
-    std::string getName();
-
-    Move();         //constructor
-
-    //CHECK IF CONSTRUCTOR SHOULD BE PUBLIC
+    Move();                     //constructor
+    std::string getName();      //getter of name
+    std::string* getVector();   //getter of strongerAgainst vector
 };
 
 #endif
