@@ -5,6 +5,6 @@ std::string Player::getName(){
     return name;
 };
 
-char Player::getMove(){
+Move* Player::getMove(){
     return move;
 }

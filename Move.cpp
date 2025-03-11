@@ -8,11 +8,3 @@ std::string Move::getName(){
 Move::Move(){
     name = "Paper";
 }
-
-Move::Move(std::string moveName){
-    name = moveName;
-}
-
-void Move::setName(std::string newName){
-    name = newName;
-}

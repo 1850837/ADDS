@@ -16,13 +16,6 @@ class Move {
     Move();         //constructor
 
     //CHECK IF CONSTRUCTOR SHOULD BE PUBLIC
-
-    Move(std::string moveName); //constructor where name is given
-
-    void setName(std::string newName);  //function to set a new move
-    //DON'T THINK WE NEED THIS?
-
-    //DOES MOVE NEED TO BE ABSTRACT??
 };
 
 #endif

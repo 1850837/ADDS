@@ -1,18 +1,19 @@
 #include "Human.h"
 #include "Player.h"
 #include <iostream>
+#include "stringToObject.h"
 
 Human::Human(){
 
     name = "Human";
-    move = new Move("Rock");    //make sure there is always filler stuff if nothing set
+    move = nullptr;
 
 };
 
 Human::Human(std::string newName){
 
     name = newName;
-    move = new Move("Rock");    //make sure there is always filler stuff if nothing set
+    move = nullptr;
 
 };
 
@@ -25,8 +26,9 @@ Move* Human::makeMove(){
     std::string a;
     std::cin >> a;
 
-    //call setName() in move
-    move->setName(a);
+    //create an object of that name
+    stringToObject object = stringToObject();  //creating an instance of the StringToObject class
+    move = object.toObject(a); //set move to the object
 
     //return move
     return move;
