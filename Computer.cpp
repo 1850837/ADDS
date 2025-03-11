@@ -1,9 +1,10 @@
 #include "Computer.h"
+#include "Rock.h"
 
 Computer::Computer(){
 
     name = "Computer";          //assigning name
-    move = new Move("Rock");    //assigning move
+    move = new Rock;    //assigning move
 
 };
 
