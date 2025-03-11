@@ -10,7 +10,7 @@ class Human : public Player{
     Human();            //constructor
     Human(std::string newName); //constructor with name
 
-    char makeMove();    //move maker
+    Move* makeMove();    //move maker
 
 };
 

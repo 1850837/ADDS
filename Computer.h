@@ -5,10 +5,11 @@
 
 class Computer : public Player{
 
-    public:
+    private:
     Computer();         //constructor
 
-    char makeMove();    //move maker
+    public:
+    Move* makeMove();    //move maker function
 
 };
 

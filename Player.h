@@ -2,16 +2,19 @@
 #define PLAYER_H
 
 #include <string>
+#include "Move.h"
 
 class Player{
 
-    public:
-    char move;
+    protected:
+    Move* move;
     std::string name;
 
-    virtual char makeMove() = 0;
-    std::string getName();
-    char getMove();
+    public:
+    virtual Move* makeMove() = 0;   //virtual function to let player make their move
+    std::string getName();          //function to get name
+    Move* getMove();                //function to get move
+    //CHECK IF GETMOVE IS NECESSARY
 
 };
 

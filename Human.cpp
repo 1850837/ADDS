@@ -5,24 +5,28 @@
 Human::Human(){
 
     name = "Human";
-    move = 'R';
+    move = new Move("Rock");    //make sure there is always filler stuff if nothing set
 
 };
 
 Human::Human(std::string newName){
 
     name = newName;
-    move = 'R';
+    move = new Move("Rock");    //make sure there is always filler stuff if nothing set
 
 };
 
-char Human::makeMove(){
+Move* Human::makeMove(){
 
     //ask user for choice
     std::cout << "Enter Move: ";
 
-    //set choice as move
-    std::cin >> move;
+    //set choice as a string variable
+    std::string a;
+    std::cin >> a;
+
+    //call setName() in move
+    move->setName(a);
 
     //return move
     return move;

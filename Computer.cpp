@@ -2,11 +2,11 @@
 
 Computer::Computer(){
 
-    name = "Computer";
-    move = 'R';
+    name = "Computer";          //assigning name
+    move = new Move("Rock");    //assigning move
 
 };
 
-char Computer::makeMove(){
+Move* Computer::makeMove(){
     return move;
 }
