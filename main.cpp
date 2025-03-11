@@ -7,7 +7,7 @@ int main(){
 
 //players
 Human* a = new Human("Maddy");
-Computer* b = new Computer();
+Human* b = new Human("B");
 
 Referee c = Referee();
 
@@ -28,3 +28,12 @@ if(d == a){
 return 0;
 
 };
+
+/* okay so! We are getting a segmentation fault accessing the vector. Accessing anything,
+be it elements or the .size() function, causes a segmentation fault. Investigate how vectors
+function. Investigate recommended ways to pass it through functions (with ptrs obvs), and what's
+actually going on here. There are also lots of comments to take out.
+
+Additionally we need to check stuff like, redundant #include things, etc. These are written
+in the book.
+*/

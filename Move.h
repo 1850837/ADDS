@@ -8,12 +8,17 @@ class Move {
 
     protected:
     std::string name;
-    std::vector<std::string> strongerAgainst;   //array to hold strings of what is stronger against
+
+    //testing
+    //std::vector<std::string> strongerAgainst;   //array to hold strings of what is stronger against
 
     public:
     Move();                     //constructor
     std::string getName();      //getter of name
     std::string* getVector();   //getter of strongerAgainst vector
+
+    //testing
+    std::vector<std::string> strongerAgainst;
 };
 
 #endif
