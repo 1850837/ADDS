@@ -5,15 +5,17 @@
 
 int main(){
 
-//players
+//creating player instances that are ptrs so the referee can handle them
 Human* a = new Human("Maddy");
 Human* b = new Human("B");
 
+//creating referee instance
 Referee c = Referee();
 
-//pointer
+//pointer to hold the winner
 Player* d;
 
+//changing the ptr to the winner
 d = c.refGame(a, b);
 
 //presenting final options
@@ -28,12 +30,3 @@ if(d == a){
 return 0;
 
 };
-
-/* okay so! We are getting a segmentation fault accessing the vector. Accessing anything,
-be it elements or the .size() function, causes a segmentation fault. Investigate how vectors
-function. Investigate recommended ways to pass it through functions (with ptrs obvs), and what's
-actually going on here. There are also lots of comments to take out.
-
-Additionally we need to check stuff like, redundant #include things, etc. These are written
-in the book.
-*/

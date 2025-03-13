@@ -4,7 +4,7 @@
 Computer::Computer(){
 
     name = "Computer";          //assigning name
-    move = new Rock;    //assigning move
+    move = new Rock;            //assigning move, always rock in this case
 
 };
 

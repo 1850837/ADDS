@@ -1,7 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <string>
 #include "Move.h"
 
 class Player{
@@ -14,7 +13,6 @@ class Player{
     virtual Move* makeMove() = 0;   //virtual function to let player make their move
     std::string getName();          //function to get name
     Move* getMove();                //function to get move
-    //CHECK IF GETMOVE IS NECESSARY
 
 };
 

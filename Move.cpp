@@ -1,12 +1,11 @@
 #include "Move.h"
-#include <string>
-
-std::string Move::getName(){
-    return name;
-}
 
 Move::Move(){
     name = "Paper";
+}
+
+std::string Move::getName(){
+    return name;
 }
 
 std::string* Move::getVector(){
