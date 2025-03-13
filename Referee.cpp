@@ -26,6 +26,11 @@ Player* Referee::refGame(Player* player1, Player* player2){
         }
     }
 
+    //checking for a tie
+    if(player1->getMove()->getName() == player2->getMove()->getName()){
+        ptr = nullptr;
+    }
+
     return ptr;
 
 };
