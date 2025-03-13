@@ -12,3 +12,7 @@ Move::Move(){
 std::string* Move::getVector(){
     return &strongerAgainst[0];
 }
+
+int Move::getArrLength(){
+    return arrLength;
+}
