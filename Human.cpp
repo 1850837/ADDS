@@ -22,7 +22,9 @@ Move* Human::makeMove(){
     std::string a;
 
     //ask user for choice
-    std::cout << "Enter Move: ";
+
+    //TESTING
+    // std::cout << "Enter Move: ";
 
     //set choice as a string variable
     std::cin >> a;
