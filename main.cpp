@@ -7,7 +7,7 @@ int main(){
 
 //creating player instances that are ptrs so the referee can handle them
 Human* a = new Human("Maddy");
-Human* b = new Human("B");
+// Human* b = new Human("B");
 
 //creating referee instance
 Referee c = Referee();
@@ -16,13 +16,13 @@ Referee c = Referee();
 Player* d;
 
 //changing the ptr to the winner
-d = c.refGame(a, b);
+d = c.refGame(a, a);
 
 //presenting final options
 if(d == a){
     std::cout << a->getName() << " Wins\n";
-} else if(d == b){
-    std::cout << b->getName() << " Wins\n";
+} else if(d == a){
+    std::cout << a->getName() << " Wins\n";
 } else if(d == nullptr){
     std::cout << "It's a tie!\n";
 };
